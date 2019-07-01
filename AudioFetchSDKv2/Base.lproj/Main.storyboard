@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioFetchSDKv2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyQ-0U-Tkk">
+                                <rect key="frame" x="162" y="44" width="90" height="30"/>
+                                <state key="normal" title="List channels"/>
+                                <connections>
+                                    <action selector="listChannels_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxg-4W-QZi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7T-Ln-q1X">
+                                <rect key="frame" x="20" y="82" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="PQ7-Qr-Y6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-b3-16z">
+                                <rect key="frame" x="157" y="290" width="100" height="30"/>
+                                <state key="normal" title="Play channel 0"/>
+                                <connections>
+                                    <action selector="playChannel0_tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJV-MO-ZCG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k7T-Ln-q1X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AdS-sm-MON"/>
+                            <constraint firstItem="LyQ-0U-Tkk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JQc-ts-oGn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k7T-Ln-q1X" secondAttribute="trailing" constant="20" id="S9D-1Y-fXG"/>
+                            <constraint firstItem="k7T-Ln-q1X" firstAttribute="top" secondItem="LyQ-0U-Tkk" secondAttribute="bottom" constant="8" id="SFJ-4R-6MM"/>
+                            <constraint firstItem="LyQ-0U-Tkk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XMw-wT-9Rh"/>
+                            <constraint firstItem="x1z-b3-16z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c0A-FI-zU1"/>
+                            <constraint firstItem="x1z-b3-16z" firstAttribute="top" secondItem="k7T-Ln-q1X" secondAttribute="bottom" constant="8" id="hNL-2D-kVm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="channelListLabel" destination="k7T-Ln-q1X" id="RQ0-Cw-nEN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+</document>

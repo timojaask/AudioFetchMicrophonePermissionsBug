@@ -1,0 +1,6 @@
+framework module Pods_AudioFetchSDKv2 {
+  umbrella header "Pods-AudioFetchSDKv2-umbrella.h"
+
+  export *
+  module * { export * }
+}

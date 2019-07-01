@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FAE19FE22CA55E4000D0324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */; };
+		2FAE1A0022CA55E4000D0324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE19FF22CA55E4000D0324 /* ViewController.swift */; };
+		2FAE1A0322CA55E4000D0324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE1A0122CA55E4000D0324 /* Main.storyboard */; };
+		2FAE1A0522CA55E6000D0324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE1A0422CA55E6000D0324 /* Assets.xcassets */; };
+		2FAE1A0822CA55E6000D0324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE1A0622CA55E6000D0324 /* LaunchScreen.storyboard */; };
+		2FCEFA4922CA584A00CFC615 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCEFA4822CA584A00CFC615 /* MediaPlayer.framework */; };
+		2FCEFA4B22CA585100CFC615 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCEFA4A22CA585100CFC615 /* libresolv.tbd */; };
+		2FD52C0322CA7BB900F7E50C /* libAudioFetchSDK-device.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */; };
+		5BA4DED44FC60A0A2B2D9DBA /* Pods_AudioFetchSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4A117CD5DFB4AB142F3BBF /* Pods_AudioFetchSDKv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E4A117CD5DFB4AB142F3BBF /* Pods_AudioFetchSDKv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioFetchSDKv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAE19FA22CA55E4000D0324 /* AudioFetchSDKv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFetchSDKv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FAE19FF22CA55E4000D0324 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FAE1A0222CA55E4000D0324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FAE1A0422CA55E6000D0324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FAE1A0722CA55E6000D0324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FAE1A0922CA55E6000D0324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCEFA4822CA584A00CFC615 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2FCEFA4A22CA585100CFC615 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		2FCEFA4C22CA595100CFC615 /* AudioFetchSDKv2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioFetchSDKv2-Bridging-Header.h"; sourceTree = "<group>"; };
+		2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAudioFetchSDK-device.a"; sourceTree = "<group>"; };
+		2FD52BFF22CA7BB900F7E50C /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		2FD52C0022CA7BB900F7E50C /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		2FD52C0122CA7BB900F7E50C /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		2FD52C0222CA7BB900F7E50C /* Apb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apb.h; sourceTree = "<group>"; };
+		3D329F0E99833EBC7C057A17 /* Pods-AudioFetchSDKv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFetchSDKv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C6A70A7EF055C3A040DE41 /* Pods-AudioFetchSDKv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFetchSDKv2.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FAE19F722CA55E4000D0324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCEFA4B22CA585100CFC615 /* libresolv.tbd in Frameworks */,
+				2FCEFA4922CA584A00CFC615 /* MediaPlayer.framework in Frameworks */,
+				2FD52C0322CA7BB900F7E50C /* libAudioFetchSDK-device.a in Frameworks */,
+				5BA4DED44FC60A0A2B2D9DBA /* Pods_AudioFetchSDKv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FAE19F122CA55E4000D0324 = {
+			isa = PBXGroup;
+			children = (
+				2FAE19FC22CA55E4000D0324 /* AudioFetchSDKv2 */,
+				2FAE19FB22CA55E4000D0324 /* Products */,
+				8D3FC1EFE1CC79B334E62505 /* Pods */,
+				A21C319567AE14B3CAA05B48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FAE19FB22CA55E4000D0324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FAE19FA22CA55E4000D0324 /* AudioFetchSDKv2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FAE19FC22CA55E4000D0324 /* AudioFetchSDKv2 */ = {
+			isa = PBXGroup;
+			children = (
+				2FD52BFD22CA7BB900F7E50C /* include */,
+				2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */,
+				2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */,
+				2FAE19FF22CA55E4000D0324 /* ViewController.swift */,
+				2FAE1A0122CA55E4000D0324 /* Main.storyboard */,
+				2FAE1A0422CA55E6000D0324 /* Assets.xcassets */,
+				2FAE1A0622CA55E6000D0324 /* LaunchScreen.storyboard */,
+				2FAE1A0922CA55E6000D0324 /* Info.plist */,
+				2FCEFA4C22CA595100CFC615 /* AudioFetchSDKv2-Bridging-Header.h */,
+			);
+			path = AudioFetchSDKv2;
+			sourceTree = "<group>";
+		};
+		2FD52BFD22CA7BB900F7E50C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2FD52BFE22CA7BB900F7E50C /* AudioFetchSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2FD52BFE22CA7BB900F7E50C /* AudioFetchSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2FD52BFF22CA7BB900F7E50C /* Notifications.h */,
+				2FD52C0022CA7BB900F7E50C /* Channel.h */,
+				2FD52C0122CA7BB900F7E50C /* AudioManager.h */,
+				2FD52C0222CA7BB900F7E50C /* Apb.h */,
+			);
+			path = AudioFetchSDK;
+			sourceTree = "<group>";
+		};
+		8D3FC1EFE1CC79B334E62505 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D329F0E99833EBC7C057A17 /* Pods-AudioFetchSDKv2.debug.xcconfig */,
+				B4C6A70A7EF055C3A040DE41 /* Pods-AudioFetchSDKv2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A21C319567AE14B3CAA05B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FCEFA4A22CA585100CFC615 /* libresolv.tbd */,
+				2FCEFA4822CA584A00CFC615 /* MediaPlayer.framework */,
+				2E4A117CD5DFB4AB142F3BBF /* Pods_AudioFetchSDKv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FAE19F922CA55E4000D0324 /* AudioFetchSDKv2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FAE1A0C22CA55E6000D0324 /* Build configuration list for PBXNativeTarget "AudioFetchSDKv2" */;
+			buildPhases = (
+				14A95BF3078E2D68482C172B /* [CP] Check Pods Manifest.lock */,
+				2FAE19F622CA55E4000D0324 /* Sources */,
+				2FAE19F722CA55E4000D0324 /* Frameworks */,
+				2FAE19F822CA55E4000D0324 /* Resources */,
+				5D7F1C8D19D9C6E61F4B6CF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioFetchSDKv2;
+			productName = AudioFetchSDKv2;
+			productReference = 2FAE19FA22CA55E4000D0324 /* AudioFetchSDKv2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FAE19F222CA55E4000D0324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Timo Jääskeläinen";
+				TargetAttributes = {
+					2FAE19F922CA55E4000D0324 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 2FAE19F522CA55E4000D0324 /* Build configuration list for PBXProject "AudioFetchSDKv2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FAE19F122CA55E4000D0324;
+			productRefGroup = 2FAE19FB22CA55E4000D0324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FAE19F922CA55E4000D0324 /* AudioFetchSDKv2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FAE19F822CA55E4000D0324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FAE1A0822CA55E6000D0324 /* LaunchScreen.storyboard in Resources */,
+				2FAE1A0522CA55E6000D0324 /* Assets.xcassets in Resources */,
+				2FAE1A0322CA55E4000D0324 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14A95BF3078E2D68482C172B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioFetchSDKv2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D7F1C8D19D9C6E61F4B6CF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FAE19F622CA55E4000D0324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FAE1A0022CA55E4000D0324 /* ViewController.swift in Sources */,
+				2FAE19FE22CA55E4000D0324 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FAE1A0122CA55E4000D0324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FAE1A0222CA55E4000D0324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FAE1A0622CA55E6000D0324 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FAE1A0722CA55E6000D0324 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FAE1A0A22CA55E6000D0324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FAE1A0B22CA55E6000D0324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FAE1A0D22CA55E6000D0324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D329F0E99833EBC7C057A17 /* Pods-AudioFetchSDKv2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W4GZQ5Z99;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AudioFetchSDKv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioFetchSDKv2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.timojaask.AudioFetchSDKv2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioFetchSDKv2/AudioFetchSDKv2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FAE1A0E22CA55E6000D0324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C6A70A7EF055C3A040DE41 /* Pods-AudioFetchSDKv2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6W4GZQ5Z99;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AudioFetchSDKv2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioFetchSDKv2",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.timojaask.AudioFetchSDKv2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioFetchSDKv2/AudioFetchSDKv2-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FAE19F522CA55E4000D0324 /* Build configuration list for PBXProject "AudioFetchSDKv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAE1A0A22CA55E6000D0324 /* Debug */,
+				2FAE1A0B22CA55E6000D0324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FAE1A0C22CA55E6000D0324 /* Build configuration list for PBXNativeTarget "AudioFetchSDKv2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FAE1A0D22CA55E6000D0324 /* Debug */,
+				2FAE1A0E22CA55E6000D0324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FAE19F222CA55E4000D0324 /* Project object */;
+}
