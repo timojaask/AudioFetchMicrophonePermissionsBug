@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F9AAB6722D3FD6E00392D23 /* libAudioFetchSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9AAB6622D3FD6E00392D23 /* libAudioFetchSDK.a */; };
 		2FAE19FE22CA55E4000D0324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */; };
 		2FAE1A0022CA55E4000D0324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE19FF22CA55E4000D0324 /* ViewController.swift */; };
 		2FAE1A0322CA55E4000D0324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE1A0122CA55E4000D0324 /* Main.storyboard */; };
@@ -14,12 +15,16 @@
 		2FAE1A0822CA55E6000D0324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE1A0622CA55E6000D0324 /* LaunchScreen.storyboard */; };
 		2FCEFA4922CA584A00CFC615 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCEFA4822CA584A00CFC615 /* MediaPlayer.framework */; };
 		2FCEFA4B22CA585100CFC615 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCEFA4A22CA585100CFC615 /* libresolv.tbd */; };
-		2FD52C0322CA7BB900F7E50C /* libAudioFetchSDK-device.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */; };
 		5BA4DED44FC60A0A2B2D9DBA /* Pods_AudioFetchSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4A117CD5DFB4AB142F3BBF /* Pods_AudioFetchSDKv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E4A117CD5DFB4AB142F3BBF /* Pods_AudioFetchSDKv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioFetchSDKv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9AAB6222D3FD6E00392D23 /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		2F9AAB6322D3FD6E00392D23 /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		2F9AAB6422D3FD6E00392D23 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		2F9AAB6522D3FD6E00392D23 /* Apb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apb.h; sourceTree = "<group>"; };
+		2F9AAB6622D3FD6E00392D23 /* libAudioFetchSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAudioFetchSDK.a; sourceTree = "<group>"; };
 		2FAE19FA22CA55E4000D0324 /* AudioFetchSDKv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFetchSDKv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FAE19FF22CA55E4000D0324 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,11 +35,6 @@
 		2FCEFA4822CA584A00CFC615 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2FCEFA4A22CA585100CFC615 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2FCEFA4C22CA595100CFC615 /* AudioFetchSDKv2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioFetchSDKv2-Bridging-Header.h"; sourceTree = "<group>"; };
-		2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAudioFetchSDK-device.a"; sourceTree = "<group>"; };
-		2FD52BFF22CA7BB900F7E50C /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
-		2FD52C0022CA7BB900F7E50C /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
-		2FD52C0122CA7BB900F7E50C /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
-		2FD52C0222CA7BB900F7E50C /* Apb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apb.h; sourceTree = "<group>"; };
 		3D329F0E99833EBC7C057A17 /* Pods-AudioFetchSDKv2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFetchSDKv2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C6A70A7EF055C3A040DE41 /* Pods-AudioFetchSDKv2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFetchSDKv2.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFetchSDKv2/Pods-AudioFetchSDKv2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +46,7 @@
 			files = (
 				2FCEFA4B22CA585100CFC615 /* libresolv.tbd in Frameworks */,
 				2FCEFA4922CA584A00CFC615 /* MediaPlayer.framework in Frameworks */,
-				2FD52C0322CA7BB900F7E50C /* libAudioFetchSDK-device.a in Frameworks */,
+				2F9AAB6722D3FD6E00392D23 /* libAudioFetchSDK.a in Frameworks */,
 				5BA4DED44FC60A0A2B2D9DBA /* Pods_AudioFetchSDKv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +54,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9AAB6022D3FD6E00392D23 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AAB6122D3FD6E00392D23 /* AudioFetchSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2F9AAB6122D3FD6E00392D23 /* AudioFetchSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2F9AAB6222D3FD6E00392D23 /* Notifications.h */,
+				2F9AAB6322D3FD6E00392D23 /* Channel.h */,
+				2F9AAB6422D3FD6E00392D23 /* AudioManager.h */,
+				2F9AAB6522D3FD6E00392D23 /* Apb.h */,
+			);
+			path = AudioFetchSDK;
+			sourceTree = "<group>";
+		};
 		2FAE19F122CA55E4000D0324 = {
 			isa = PBXGroup;
 			children = (
@@ -75,8 +94,8 @@
 		2FAE19FC22CA55E4000D0324 /* AudioFetchSDKv2 */ = {
 			isa = PBXGroup;
 			children = (
-				2FD52BFD22CA7BB900F7E50C /* include */,
-				2FD52BFB22CA7BB900F7E50C /* libAudioFetchSDK-device.a */,
+				2F9AAB6022D3FD6E00392D23 /* include */,
+				2F9AAB6622D3FD6E00392D23 /* libAudioFetchSDK.a */,
 				2FAE19FD22CA55E4000D0324 /* AppDelegate.swift */,
 				2FAE19FF22CA55E4000D0324 /* ViewController.swift */,
 				2FAE1A0122CA55E4000D0324 /* Main.storyboard */,
@@ -86,25 +105,6 @@
 				2FCEFA4C22CA595100CFC615 /* AudioFetchSDKv2-Bridging-Header.h */,
 			);
 			path = AudioFetchSDKv2;
-			sourceTree = "<group>";
-		};
-		2FD52BFD22CA7BB900F7E50C /* include */ = {
-			isa = PBXGroup;
-			children = (
-				2FD52BFE22CA7BB900F7E50C /* AudioFetchSDK */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		2FD52BFE22CA7BB900F7E50C /* AudioFetchSDK */ = {
-			isa = PBXGroup;
-			children = (
-				2FD52BFF22CA7BB900F7E50C /* Notifications.h */,
-				2FD52C0022CA7BB900F7E50C /* Channel.h */,
-				2FD52C0122CA7BB900F7E50C /* AudioManager.h */,
-				2FD52C0222CA7BB900F7E50C /* Apb.h */,
-			);
-			path = AudioFetchSDK;
 			sourceTree = "<group>";
 		};
 		8D3FC1EFE1CC79B334E62505 /* Pods */ = {
